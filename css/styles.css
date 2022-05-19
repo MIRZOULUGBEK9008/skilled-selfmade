@@ -165,6 +165,19 @@ img {
   opacity: 0.6;
 }
 
+.button-three {
+  background-color: #4851ff;
+  background-image: var(--blue-linear);
+}
+
+.button-three:hover {
+  opacity: 0.8;
+}
+
+.button-three:active {
+  opacity: 0.6;
+}
+
 
 /* MAIN-CONTENT  */
 .main-content {
@@ -175,9 +188,6 @@ img {
 
 
 /* TIPA-HEADER  */
-.tipa-header {
-}
-
 .site-header {
   display: flex;
   align-items: center;
@@ -320,9 +330,6 @@ img {
 
 
 /* MAIN-CONTENT  */
-.site-hero {
-}
-
 .course-list {
   margin: 0;
   padding: 0;
@@ -399,4 +406,9 @@ img {
 
 .course-description {
   margin: 0;
+}
+
+/* SITE-FOOTER  */
+.site-footer {
+  background-color: var(--heading-color);
 }
