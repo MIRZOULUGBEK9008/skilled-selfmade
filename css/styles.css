@@ -5,6 +5,7 @@
   --body-linear: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
   --main-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
   --cards-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.05);
+  --main-linear-color: rgba(255, 111, 72, 1);
   --heading-color: #13183f;
   --main-text-color: #83869a;
   --extra-color: #fff;
@@ -74,13 +75,14 @@ body {
   background-position: calc(-22px) center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #222;
+  color: var(--main-text-color);
   font-family: "Plus Jakarta Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 28px;
   font-weight: 500;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -137,6 +139,19 @@ img {
   opacity: 0.6;
 }
 
+.button-two {
+  background-color: var(--main-linear-color);
+  background-image: var(--main-linear);
+}
+
+.button-two:hover {
+  opacity: 0.5;
+}
+
+.button-two:active {
+  opacity: 0.6;
+}
+
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
@@ -145,13 +160,14 @@ img {
 
 /* TIPA-HEADER  */
 .tipa-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
+
 .site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .site-logo-link {
@@ -173,4 +189,75 @@ img {
   height: 28px;
   object-fit: cover;
   margin-right: 30px;
+}
+
+.tipa-header-part {
+  display: flex;
+  padding-top: 63px;
+}
+
+.tipa-header-content {
+  width: 457px;
+  padding-top: 148px;
+  margin-right: 282px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-heading {
+  margin: 0;
+  margin-bottom: 29px;
+  color: var(--heading-color);
+  font-size: 56px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+.main-text {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.tipa-header-part-two {
+  position: relative;
+}
+
+.linear-box-main-wrapper {
+  display: flex;
+  position: absolute;
+}
+
+.linear-box {
+  position: absolute;
+  top: -347px;
+  right: -561px;
+  z-index: -1;
+  border-radius: 159px;
+  width: 317px;
+  height: 1008px;
+  background-color: rgba(72, 81, 255, 1);
+  background-image: var(--blue-linear);
+  transform: rotate(45deg);
+}
+
+.bg-removed-img {
+  position: absolute;
+  top: 77px;
+  z-index: 100;
+  width: 350px;
+  height: 483px;
+  border-bottom-left-radius: 159px;
+  border-bottom-right-radius: 159px;
+  flex-shrink: 0;
+}
+
+.linear-box-main {
+  position: static;
+  right: 0;
+  top: 0;
+  height: 560px;
+  background-color: var(--main-linear-color);
+  background-image: var(--main-linear);
+  transform: none;
 }
