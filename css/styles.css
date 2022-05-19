@@ -1,9 +1,55 @@
 /* CUSTOM PROPS */
 :root {
-
+  --main-linear: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  --blue-linear: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  --body-linear: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+  --main-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
+  --cards-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.05);
+  --heading-color: #13183f;
+  --main-text-color: #83869a;
+  --extra-color: #fff;
+  --extra-button: #f74780;
+  --button-hover-color: #666ca3;
+  --extra-button-hover: #ffA7c3;
+  --body-color: #f2f2f2;
 }
 
 /* FONT-FACE  */
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Medium.woff2") format("woff2"),
+  url("../fonts/PlusJakartaSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-ExtraBold.woff2") format("woff2"),
+  url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Bold.woff2") format("woff2"),
+  url("../fonts/PlusJakartaSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2"),
+  url("../fonts/PlusJakartaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 /* GLOBAL-STYLES  */
@@ -23,11 +69,16 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--extra-color);
+  background-image: var(--body-linear);
+  background-position: calc(-22px) center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #222;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Plus Jakarta Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
   padding: 0;
   margin: 0;
 }
@@ -40,10 +91,10 @@ img {
 
 /* CONTAINER  */
 .container {
-  max-width: 1200px;
+  max-width: 1150px;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -63,16 +114,4 @@ img {
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
-}
-
-
-/* RETINA-BG  */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-
 }
