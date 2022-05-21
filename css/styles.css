@@ -3,8 +3,11 @@
   --main-linear: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   --blue-linear: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
   --body-linear: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+  --button-blue-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+
   --main-shadow: 0px 34px 54px 0px rgba(6, 22, 141, 0.16);
   --cards-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.05);
+
   --main-linear-color: rgba(255, 111, 72, 1);
   --heading-color: #13183f;
   --main-text-color: #83869a;
@@ -71,9 +74,6 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: var(--extra-color);
-  background-image: var(--body-linear);
-  background-position: calc(-22px) calc(1200px);
-  background-repeat: no-repeat;
   color: var(--main-text-color);
   font-family: "Plus Jakarta Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -87,6 +87,11 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+*:focus {
+  outline: dotted 2px var(--heading-color);
+  outline-offset: 3px;
 }
 
 
@@ -125,57 +130,57 @@ img {
   color 0.3s ease, opacity 0.3s ease;
 }
 
-.button-one {
+.button-dark {
   padding: 14px 32px;
   background-color: var(--heading-color);
   border-radius: 28px;
 }
 
-.button-one:hover {
+.button-dark:hover {
   background-color: var(--button-hover-color);
 }
 
-.button-one:active {
+.button-dark:active {
   opacity: 0.6;
 }
 
-.button-two {
+.button-linear {
   background-color: var(--main-linear-color);
   background-image: var(--main-linear);
 }
 
-.button-two:hover {
+.button-linear:hover {
   opacity: 0.5;
 }
 
-.button-two:active {
+.button-linear:active {
   opacity: 0.6;
 }
 
-.main-button {
+.button-glob {
   margin-top: auto;
   color: var(--extra-button);
 }
 
-.main-button:hover {
+.button-glob:hover {
   color: var(--extra-button-hover);
 }
 
-.main-button:active {
+.button-glob:active {
   opacity: 0.6;
 }
 
-.button-three {
+.button-blue {
   background-color: #4851ff;
   background-image: var(--blue-linear);
 }
 
-.button-three:hover {
-  opacity: 0.8;
+.button-blue:hover {
+  background-image: var(--button-blue-hover);
 }
 
-.button-three:active {
-  opacity: 0.6;
+.button-blue:active {
+  opacity: 0.8;
 }
 
 
@@ -184,11 +189,14 @@ img {
   flex-grow: 1;
   padding-top: 202px;
   padding-bottom: 140px;
+  background-image: var(--body-linear);
+  background-position: calc(-22px) center;
+  background-repeat: no-repeat;
 }
 
 
 /* TIPA-HEADER  */
-.site-header {
+.site-mark {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,6 +208,7 @@ img {
   display: flex;
   flex-shrink: 0;
   transition: opacity 0.3s ease;
+  margin-right: 30px;
 }
 
 .site-logo-link:hover {
@@ -214,7 +223,6 @@ img {
   width: 112px;
   height: 28px;
   object-fit: cover;
-  margin-right: 30px;
 }
 
 .tipa-header-part {
@@ -274,7 +282,6 @@ img {
 
 .mini-card-hours {
   width: 199px;
-  height: 120px;
   bottom: 98px;
   left: -120px;
 }
@@ -283,11 +290,11 @@ img {
   top: 103px;
   right: -118px;
   width: 155px;
-  height: 120px;
 }
 
 .tipa-heading {
   display: inline-block;
+  margin: 0;
   font-size: 40px;
   line-height: 50px;
   color: var(--heading-color);
@@ -362,6 +369,7 @@ img {
 }
 
 .card-wrapper {
+  display: flex;
   position: relative;
   width: 350px;
   min-height: 322px;
@@ -393,7 +401,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-grow: 1;
 }
 
 .course-title {
@@ -409,6 +416,12 @@ img {
 }
 
 /* SITE-FOOTER  */
-.site-footer {
+.site-footer  {
   background-color: var(--heading-color);
+  outline-color: var(--extra-color);
+}
+
+.site-footer *:focus {
+  background-color: var(--heading-color);
+  outline-color: var(--extra-color);
 }
