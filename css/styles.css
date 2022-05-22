@@ -22,7 +22,7 @@
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url("../fonts/PlusJakartaSans-Medium.woff2") format("woff2"),
-  url("../fonts/PlusJakartaSans-Medium.woff") format("woff");
+    url("../fonts/PlusJakartaSans-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -31,7 +31,7 @@
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url("../fonts/PlusJakartaSans-ExtraBold.woff2") format("woff2"),
-  url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
+    url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -39,18 +39,9 @@
 
 @font-face {
   font-family: "Plus Jakarta Sans";
-  src: url("../fonts/PlusJakartaSans-Bold.woff2") format("woff2"),
-  url("../fonts/PlusJakartaSans-Bold.woff") format("woff");
+  src: url("../fonts/PlusJakartaSans-ExtraBold.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
   font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2"),
-  url("../fonts/PlusJakartaSans-Regular.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
@@ -245,6 +236,7 @@ img {
   color: var(--heading-color);
   font-size: 56px;
   line-height: 70px;
+  font-weight: 800;
 }
 
 .main-text {
@@ -277,7 +269,7 @@ img {
   display: inline-block;
   margin-bottom: 2px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .mini-card-hours {
@@ -337,10 +329,7 @@ img {
 
 
 /* MAIN-CONTENT  */
-.course-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.site-hero-inner {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -348,7 +337,7 @@ img {
 }
 
 .course-list-item {
-  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 80px;
 }
 
@@ -366,6 +355,7 @@ img {
   color: var(--extra-color);
   font-size: 32px;
   line-height: 40px;
+  font-weight: 800;
 }
 
 .card-wrapper {
@@ -409,6 +399,7 @@ img {
   margin-bottom: 24px;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 800;
 }
 
 .course-description {
