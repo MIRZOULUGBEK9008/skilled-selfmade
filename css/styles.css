@@ -178,7 +178,7 @@ img {
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
-  padding-top: 259px;
+  padding-top: 134px;
   padding-bottom: 147px;
   background-image: var(--body-linear);
   background-position: calc(-22px) center;
@@ -220,6 +220,7 @@ img {
   display: flex;
   align-items: flex-start;
   padding-top: 63px;
+  padding-bottom: 125px;
 }
 
 .hero-header__content {
