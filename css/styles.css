@@ -22,7 +22,7 @@
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url("../fonts/PlusJakartaSans-Medium.woff2") format("woff2"),
-    url("../fonts/PlusJakartaSans-Medium.woff") format("woff");
+  url("../fonts/PlusJakartaSans-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -31,7 +31,7 @@
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url("../fonts/PlusJakartaSans-ExtraBold.woff2") format("woff2"),
-    url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
+  url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url("../fonts/PlusJakartaSans-ExtraBold.woff2") format("woff2"),
-    url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
+  url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -96,7 +96,7 @@ img {
   margin-right: auto;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -105,7 +105,7 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /* BUTTON  */
 .button {
@@ -121,56 +121,56 @@ img {
   color 0.3s ease, opacity 0.3s ease;
 }
 
-.button-dark {
+.button--dark {
   padding: 14px 32px;
   background-color: var(--heading-color);
   border-radius: 28px;
 }
 
-.button-dark:hover {
+.button--dark:hover {
   background-color: var(--button-hover-color);
 }
 
-.button-dark:active {
+.button--dark:active {
   opacity: 0.6;
 }
 
-.button-linear {
+.button--linear {
   background-color: var(--main-linear-color);
   background-image: var(--main-linear);
 }
 
-.button-linear:hover {
+.button--linear:hover {
   opacity: 0.5;
 }
 
-.button-linear:active {
+.button--linear:active {
   opacity: 0.6;
 }
 
-.button-glob {
+.button--simple {
   margin-top: auto;
   color: var(--extra-button);
 }
 
-.button-glob:hover {
+.button--simple:hover {
   color: var(--extra-button-hover);
 }
 
-.button-glob:active {
+.button--simple:active {
   opacity: 0.6;
 }
 
-.button-blue {
+.button--blue {
   background-color: #4851ff;
   background-image: var(--blue-linear);
 }
 
-.button-blue:hover {
+.button--blue:hover {
   background-image: var(--button-blue-hover);
 }
 
-.button-blue:active {
+.button--blue:active {
   opacity: 0.8;
 }
 
@@ -178,8 +178,8 @@ img {
 /* MAIN-CONTENT  */
 .main-content {
   flex-grow: 1;
-  padding-top: 202px;
-  padding-bottom: 140px;
+  padding-top: 259px;
+  padding-bottom: 147px;
   background-image: var(--body-linear);
   background-position: calc(-22px) center;
   background-repeat: no-repeat;
@@ -195,42 +195,43 @@ img {
   padding-bottom: 24px;
 }
 
-.site-logo-link {
+.logo {
   display: flex;
   flex-shrink: 0;
   transition: opacity 0.3s ease;
   margin-right: 30px;
 }
 
-.site-logo-link:hover {
+.logo:hover {
   opacity: 0.8;
 }
 
-.site-logo-link:active {
+.logo:active {
   opacity: 0.6;
 }
 
-.site-logo {
+.logo__img {
   width: 112px;
   height: 28px;
   object-fit: cover;
 }
 
-.tipa-header-part {
+.hero-header__hero {
   display: flex;
+  align-items: flex-start;
   padding-top: 63px;
 }
 
-.tipa-header-content {
+.hero-header__content {
   width: 457px;
-  padding-top: 148px;
+  padding-top: 86px;
   margin-right: 282px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.main-heading {
+.hero-header__title {
   margin: 0;
   margin-bottom: 29px;
   color: var(--heading-color);
@@ -239,21 +240,21 @@ img {
   font-weight: 800;
 }
 
-.main-text {
+.hero-header__description {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
 
-.tipa-header-part-two {
+.hero-header__badges-wrapper {
   position: relative;
 }
 
-.linear-box-main-wrapper {
+.hero-header__badges-wrapper-main {
   display: flex;
   position: absolute;
 }
 
-.mini-card-global {
+.card {
   padding: 24px 20px;
   display: flex;
   flex-direction: column;
@@ -265,26 +266,26 @@ img {
 }
 
 
-.mini-card-heading {
+.card__title {
   display: inline-block;
   margin-bottom: 2px;
   font-size: 16px;
   font-weight: 800;
 }
 
-.mini-card-hours {
-  width: 199px;
-  bottom: 98px;
-  left: -120px;
+.card--hours {
+  width: 193px;
+  bottom: 75px;
+  left: -115px;
 }
 
-.mini-cards-members {
-  top: 103px;
-  right: -118px;
+.card--members {
+  top: 81px;
+  right: -121px;
   width: 155px;
 }
 
-.tipa-heading {
+.card__description {
   display: inline-block;
   margin: 0;
   font-size: 40px;
@@ -293,7 +294,7 @@ img {
   font-weight: 800;
 }
 
-.linear-box {
+.hero-header__badge {
   position: absolute;
   top: -347px;
   right: -561px;
@@ -306,7 +307,7 @@ img {
   transform: rotate(45deg);
 }
 
-.bg-removed-img {
+.hero-header__img {
   position: absolute;
   top: 77px;
   z-index: 100;
@@ -317,7 +318,7 @@ img {
   flex-shrink: 0;
 }
 
-.linear-box-main {
+.hero-header__badge--blue {
   position: static;
   right: 0;
   top: 0;
@@ -329,19 +330,14 @@ img {
 
 
 /* MAIN-CONTENT  */
-.site-hero-inner {
+.main-content__card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  margin-right: -30px;
   margin-bottom: -80px;
 }
 
-.course-list-item {
-  margin-left: 30px;
-  margin-bottom: 80px;
-}
-
-.card-wrapper-heading {
+.main-content__card-title-wrapper {
   width: 350px;
   min-height: 322px;
   background-color: var(--main-linear-color);
@@ -349,7 +345,7 @@ img {
   border-radius: 15px;
 }
 
-.site-hero-heading {
+.main-content__card-title-main {
   margin: 0;
   padding: 64px 32px;
   color: var(--extra-color);
@@ -358,11 +354,16 @@ img {
   font-weight: 800;
 }
 
-.card-wrapper {
-  display: flex;
+.main-content__card {
+  margin-right: 30px;
+  margin-bottom: 80px;
+}
+
+.main-content__card-inner {
   position: relative;
   width: 350px;
   min-height: 322px;
+  height: 100%;
   padding-right: 32px;
   padding-left: 32px;
   padding-top: 64px;
@@ -372,7 +373,7 @@ img {
   box-shadow: var(--cards-shadow);
 }
 
-.course-badge {
+.main-content__card-badge {
   position: absolute;
   left: 32px;
   top: 0;
@@ -387,13 +388,14 @@ img {
   transform: translateY(-47%);
 }
 
-.course-content-wrapper {
+.main-content__card-content {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.course-title {
+.main-content__card-title {
   color: var(--heading-color);
   margin: 0;
   margin-bottom: 24px;
@@ -402,9 +404,10 @@ img {
   font-weight: 800;
 }
 
-.course-description {
+.main-content__card-description {
   margin: 0;
 }
+
 
 /* SITE-FOOTER  */
 .site-footer  {
